@@ -30,6 +30,6 @@ _12_subtraction = 1 - 1
 # --- String Operators ---
 
 # the + operator combines two strings into one string
-_13_concatenation = "toad" + "stool"
+_13_concatenation = "toad" + "stool" = "toadstool"
 
 print("end of script")
