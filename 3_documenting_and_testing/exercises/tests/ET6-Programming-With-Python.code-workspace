@@ -1,0 +1,52 @@
+{
+	"folders": [
+		{
+			"name": "ET6-Programming-With-Python",
+			"path": "../../.."
+		}
+	],
+	"settings": {
+		"files.autoSave": "onFocusChange",
+		"editor.formatOnSave": true,
+		"editor.formatOnPaste": true,
+		"editor.guides.indentation": true,
+		"editor.guides.highlightActiveIndentation": true,
+		"editor.tabSize": 2,
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.bracketPairColorization.enabled": true,
+		"editor.guides.bracketPairs": "active",
+		"editor.guides.bracketPairsHorizontal": "active",
+		"editor.guides.highlightActiveBracketPair": true,
+		"editor.linkedEditing": true,
+		"html.autoClosingTags": true,
+		"html.suggest.html5": true,
+		"[html]": {
+			"editor.defaultFormatter": "vscode.html-language-features"
+		},
+		"javascript.autoClosingTags": true,
+		"javascript.suggest.autoImports": true,
+		"javascript.updateImportsOnFileMove.enabled": "always",
+		"javascript.suggest.paths": false,
+		"typescript.autoClosingTags": true,
+		"typescript.suggest.autoImports": true,
+		"typescript.updateImportsOnFileMove.enabled": "always",
+		"typescript.suggest.paths": false,
+		"workbench.editor.highlightModifiedTabs": true,
+		"files.trimFinalNewlines": true,
+		"files.insertFinalNewline": true,
+		"markdown.suggest.paths.enabled": true,
+		"[markdown]": {
+			"editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+		},
+		"markdown.extension.toc.updateOnSave": false,
+		"python.testing.unittestArgs": [
+			"-v",
+			"-s",
+			".",
+			"-p",
+			"test_*.py"
+		],
+		"python.testing.pytestEnabled": false,
+		"python.testing.unittestEnabled": true
+	}
+}

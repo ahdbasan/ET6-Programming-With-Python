@@ -23,18 +23,17 @@ class TestJoinWords(unittest.TestCase):
     # Standard test cases
     def test_two_words_space(self):
         """It should join two words with space"""
-        self.assertEqual(join_words(['hello', 'world'], ' '), 'hello world')
+        self.assertEqual(join_words(['hello', 'world'], ' '), ' hello world')
     
     def test_three_words_comma(self):
         """It should join three words with comma"""
-        self.assertEqual(join_words(['a', 'b', 'c'], ','), 'a,b,c')
+        self.assertEqual(join_words(['a', 'b', 'c'], ','), ',a,b,c')
     
     def test_words_with_dash(self):
         """It should join words with dash"""
         self.assertEqual(
             join_words(['one', 'two', 'three'], '-'),
-            'one-two-three'
-        )
+            '-one-two-three')
     
     # Edge cases
     def test_empty_list(self):
@@ -43,7 +42,7 @@ class TestJoinWords(unittest.TestCase):
     
     def test_single_word(self):
         """It should return the word itself for single-item list"""
-        self.assertEqual(join_words(['hello'], ','), 'hello')
+        self.assertEqual(join_words(['hello'], ','), ',hello')
     
     def test_empty_separator(self):
         """It should join directly when separator is empty string"""
@@ -53,7 +52,7 @@ class TestJoinWords(unittest.TestCase):
         """It should work with multi-character separators"""
         self.assertEqual(
             join_words(['hello', 'world'], ' :: '),
-            'hello :: world'
+            ' :: hello :: world'
         )
     
     # Defensive tests

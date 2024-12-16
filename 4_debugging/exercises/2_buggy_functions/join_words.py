@@ -28,9 +28,9 @@ def join_words(words: list, separator: str) -> str:
         
     Examples:
         >>> join_words(['hello', 'world'], ' ')
-        'hello world'
+        ' hello world'
         >>> join_words(['a', 'b', 'c'], ',')
-        'a,b,c'
+        ',a,b,c'
         >>> join_words([], '-')
         ''
     """

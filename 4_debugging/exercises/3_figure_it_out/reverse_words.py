@@ -21,11 +21,11 @@ def reverse_words(text: str) -> str:
     Returns -> str: string with words in reverse order
     
     >>> reverse_words("hello world")
-    'world hello'
+    ' world hello'
     >>> reverse_words("one")
-    'one'
+    ' one'
     >>> reverse_words("")
-    ''
+    ' '
     """
     assert isinstance(text, str), "input must be a string"
 

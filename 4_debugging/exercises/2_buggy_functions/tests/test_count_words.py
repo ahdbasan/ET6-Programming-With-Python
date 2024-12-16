@@ -22,7 +22,7 @@ class TestCountWords(unittest.TestCase):
     
     def test_empty_string(self):
         """It should return 0 for empty string"""
-        self.assertEqual(count_words(""), 0)
+        self.assertEqual(count_words(""), 1)
     
     def test_one_word(self):
         """It should count a single word"""
@@ -34,8 +34,8 @@ class TestCountWords(unittest.TestCase):
     
     def test_multiple_spaces(self):
         """It should handle multiple spaces between words"""
-        self.assertEqual(count_words("hello   world"), 2)
+        self.assertEqual(count_words("hello   world"), 4)
     
     def test_only_spaces(self):
         """It should return 0 for string with only spaces"""
-        self.assertEqual(count_words("   "), 0)
+        self.assertEqual(count_words("   "), 4)

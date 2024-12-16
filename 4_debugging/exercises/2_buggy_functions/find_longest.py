@@ -38,8 +38,9 @@ def find_longest(items: list) -> str:
     if not items:
         raise ValueError("list cannot be empty")
         
-    longest = items[0]
-    for item in items:
-        if len(item) > len(longest):
-            longest = item
-    return longest
+    # Check that all items are strings
+    assert all(isinstance(item, str) for item in items), "All items must be strings"
+    
+    # Find the longest string
+    # In case of ties, return the first occurrence
+    return max(items, key=len)

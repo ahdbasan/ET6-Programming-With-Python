@@ -26,20 +26,20 @@ class TestRemoveSpaces(unittest.TestCase):
     
     def test_two_words(self):
         """It should remove a single space between words"""
-        self.assertEqual(remove_spaces("hello world"), "hello_world")
+        self.assertEqual(remove_spaces("hello world"), "helloworld")
     
     def test_multiple_words(self):
         """It should remove all spaces between multiple words"""
-        self.assertEqual(remove_spaces("the quick brown fox"), " thequickbrownfox ")
+        self.assertEqual(remove_spaces("the quick brown fox"), "thequickbrownfox")
     
     # Edge cases
     def test_empty_string(self):
         """It should handle empty strings"""
-        self.assertEqual(remove_spaces(""), "")
+        self.assertEqual(remove_spaces(""), '')
     
     def test_only_spaces(self):
         """It should handle strings containing only spaces"""
-        self.assertEqual(remove_spaces("   "), "   ")
+        self.assertEqual(remove_spaces("   "), '')
     
     def test_spaces_at_ends(self):
         """It should remove spaces at start and end of string"""
@@ -47,7 +47,7 @@ class TestRemoveSpaces(unittest.TestCase):
     
     def test_special_characters(self):
         """It should preserve all non-space characters"""
-        self.assertEqual(remove_spaces("hello, world!"), "helloworld")
+        self.assertEqual(remove_spaces("hello, world!"), "hello,world!")
     
     def test_numbers_and_symbols(self):
         """It should handle strings with numbers and symbols"""
@@ -66,7 +66,7 @@ class TestRemoveSpaces(unittest.TestCase):
     
     def test_list_input(self):
         """It should raise AssertionError for list input"""
-        self.assertEqual(remove_spaces(["hello", "world"]), "helloworld")
+        with self.assertRaises(AssertionError): remove_spaces(["hello", "world"])
 
 if __name__ == '__main__':
     unittest.main()
