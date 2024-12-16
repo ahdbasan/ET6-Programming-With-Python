@@ -1,6 +1,4 @@
-def mystery_5(a, b=None):
-    if b is None:
-        b = []
+def mystery_5(a, b):
     while a:
         c = min(a)
         a.remove(c)
