@@ -9,7 +9,8 @@ interests, and anything else you'd like to share.
 
 - [ ] You created your Profile README repository using
       [the template `username` repository](https://github.com/MIT-Emerging-Talent/username)
-- [ ] All of the CI checks pass under the Actions tab
+- [ ] Your repository’s name matches your GitHub username.
+- [ ] All of the CI checks pass under the Actions tab. _Or_ you commented the lines that failed CI checks explaining why you broke the rule to get the README you wanted. (eg. “I used HTML to align the image in the center”)
 
 ## Suggested Study
 
